@@ -70,6 +70,26 @@ class GetIpaddressForTree(BaseModel):
     count_host: Optional[int]
     children: List[GetIpaddressForTree]
 
-# class GetIpaddressForTree(BaseModel):
-#     code: int    
-#     ip: IPv4Interface
+class GetIpaddressSpace(BaseModel):
+    code: int    
+    title: str
+
+class GetIpaddressIptype(BaseModel):
+    code: int    
+    title: str
+
+class GetIpaddressMode(BaseModel):
+    code: int    
+    title: str
+
+class GetIpaddressNettype(BaseModel):
+    code: int    
+    title: str
+
+class GetIpaddressVrf(BaseModel):
+    code: int    
+    title: str
+
+class GetIpaddressEquiptype(BaseModel):
+    code: int    
+    title: str
